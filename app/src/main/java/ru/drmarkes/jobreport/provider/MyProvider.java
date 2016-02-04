@@ -16,7 +16,7 @@ import java.util.HashMap;
  * Created by Андрей on 24.01.2016.
  */
 public class MyProvider extends ContentProvider {
-    private static final int DATABASE_VERSION = 4;
+    private static final int DATABASE_VERSION = 5;
     private static final int JOB = 1;
     private static final int JOB_ID = 2;
     private DataBaseHelper dbHelper;
