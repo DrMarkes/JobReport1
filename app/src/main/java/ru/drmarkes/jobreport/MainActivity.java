@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.widget.DatePicker;
 import android.widget.ListView;
 import android.widget.TextView;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
@@ -47,13 +48,13 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         setSupportActionBar(toolbar);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(this);
-        dateTextView = (TextView)findViewById(R.id.dateTextView);
+        dateTextView = (TextView) findViewById(R.id.dateTextView);
         ListView listViewItems = (ListView) findViewById(R.id.listViewItems);
         dataAdapter = new DataAdapter(this, null, 0);
         listViewItems.setAdapter(dataAdapter);
 
         calendar = Calendar.getInstance(TimeZone.getDefault());
-        if(savedInstanceState != null) {
+        if (savedInstanceState != null) {
             day = savedInstanceState.getInt(DAY);
             month = savedInstanceState.getInt(MONTH);
             year = savedInstanceState.getInt(YEAR);
@@ -136,6 +137,9 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
     @Override
     public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+        day = dayOfMonth;
+        month = monthOfYear;
+        this.year = year;
         calendar.set(year, monthOfYear, dayOfMonth);
         showDate();
         getDaySelection();
