@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Отчет о работе</string>
+    <string name="action_settings">Настройки</string>
+    <string name="title_activity_save">Ввод данных</string>
+
+    <string-array name="order">
+        <item>экстренно</item>
+        <item>планово</item>
+    </string-array>
+
+    <string-array name="department">
+        <item>Общая хирургия</item>
+        <item>Гинекология</item>
+        <item>Приемное отеление</item>
+        <item>Пульмонология</item>
+        <item>Нейрохирургия</item>
+        <item>Неврология</item>
+        <item>Травматология</item>
+        <item>Печеночная хирургия</item>
+        <item>Кардиология</item>
+        <item>Гастроэнтерология</item>
+        <item>Ортопедия</item>
+        <item>Эндокринология</item>
+    </string-array>
+
+    <string-array name="manipulation">
+        <item>Эндотрахеальный наркоз</item>
+        <item>Спинномозговая анестезия</item>
+        <item>Внутривенный наркоз</item>
+        <item>Катетер. подключ. вены</item>
+        <item>Консультация</item>
+        <item>Проводниковая анестезия</item>
+        <item>Катетер. периф. вены</item>
+    </string-array>
+
+    <string name="patient">Фамилия пациента</string>
+    <string name="number">Номер истории болезни</string>
+</resources>
