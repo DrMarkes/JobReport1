@@ -43,7 +43,6 @@ public class DataAdapter extends CursorAdapter {
     @Override
     public void bindView(View view, Context context, Cursor cursor) {
         long id = cursor.getLong(cursor.getColumnIndex(ContractClass.Job._ID));
-//      String date = cursor.getString(cursor.getColumnIndex(ContractClass.Job.COLUMN_NAME_DAY));
         String order = cursor.getString(cursor.getColumnIndex(ContractClass.Job.COLUMN_NAME_ORDER));
         String department = cursor.getString(cursor.getColumnIndex(ContractClass.Job.COLUMN_NAME_DEPARTMENT));
         String manipulation = cursor.getString(cursor.getColumnIndex(ContractClass.Job.COLUMN_NAME_MANIPULATION));
@@ -65,7 +64,7 @@ public class DataAdapter extends CursorAdapter {
         }
     }
 
-    private static class Holder {
+    public static class Holder {
         public TextView textViewOrders;
         public TextView textViewDepartment;
         public TextView textViewManipulation;

@@ -35,4 +35,5 @@
 
     <string name="patient">Фамилия пациента</string>
     <string name="number">Номер истории болезни</string>
+    <string name="dialog_dissmis">Удалить запись?</string>
 </resources>
