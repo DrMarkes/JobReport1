@@ -9,6 +9,7 @@
     </string-array>
 
     <string-array name="department">
+        <item>Реанимация</item>
         <item>Общая хирургия</item>
         <item>Гинекология</item>
         <item>Приемное отеление</item>
@@ -31,6 +32,7 @@
         <item>Консультация</item>
         <item>Проводниковая анестезия</item>
         <item>Катетер. периф. вены</item>
+        <item>Катетер. яремной вены</item>
     </string-array>
 
     <string name="patient">Фамилия пациента</string>
